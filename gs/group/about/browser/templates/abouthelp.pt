@@ -1,0 +1,18 @@
+<div id="gs-group-home-about-help">
+  <h2>Change the Group Homepage <cite class="tab">About</cite> Tab</h2>
+  <p>
+    The <cite class="tab">About</cite> Tab on the homepage of the group
+    contains an introduction to the group.
+    Site administrators can change <cite class="tab">About</cite> Tab by
+    carrying out the following steps.
+  </p>
+  <ol>
+    <li>Log in</li>
+    <li>Visit the homepage for your group.</li>
+    <li>Click <samp class="link">change this about tab.</samp>
+    <li>Enter the new text for the <cite class="tab">About</cite> Tab
+      in the <samp class="field">Text</samp> field.</li>
+    <li>Click the <samp class="button">Change</samp> button.</li>
+  </ol>
+</div><!--gs-group-home-about-help-->
+

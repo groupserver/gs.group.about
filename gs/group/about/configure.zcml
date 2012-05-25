@@ -5,5 +5,30 @@
   xmlns:sqlos="http://namespaces.sqlobject.org/sqlos"
   xmlns:five="http://namespaces.zope.org/five">
 
+  <!-- The About Tab -->
+  <browser:viewlet name="gs-group-home-about"
+    manager="gs.group.home.interfaces.IGroupHomepageInfo"
+    template="browser/templates/about.pt"
+    class=".abouttab.AboutTab"
+    permission="zope2.View"
+    weight="0"
+    title="About" />
+
+  <!--The Change About Page-->
+  <interface 
+    interface=".interfaces.IChangeAbout"/>
+  <browser:page
+    for="gs.group.base.interfaces.IGSGroupMarker"
+    name="changeabout.html"
+    class=".changeabout.ChangeAbout"
+    permission="zope2.ManageProperties"/>
+
+  <!--Help-->
+  <browser:viewlet name="gs-group-home-about-help"
+    manager="gs.help.interfaces.IAdminHelp"
+    template="browser/templates/abouthelp.pt"
+    permission="zope2.Public"
+    weight="3" />
+
 </configure>
 
