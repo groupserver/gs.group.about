@@ -1,0 +1,5 @@
+<div id="gs-group-about-tab-intro" 
+  tal:content="structure view/aboutText">
+  This is the bulk of the text for the about tab.
+</div><!--gs-group-about-tab-intro-->
+

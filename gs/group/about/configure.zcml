@@ -6,13 +6,40 @@
   xmlns:five="http://namespaces.zope.org/five">
 
   <!-- The About Tab -->
-  <browser:viewlet name="gs-group-home-about"
+  <browser:viewlet name="gs-group-about-tab"
+    for="gs.group.base.interfaces.IGSGroupMarker"
     manager="gs.group.home.interfaces.IGroupHomepageInfo"
-    template="browser/templates/about.pt"
+    template="browser/templates/abouttab.pt"
     class=".abouttab.AboutTab"
     permission="zope2.View"
     weight="0"
     title="About" />
+
+  <browser:viewletManager
+    for="gs.group.base.interfaces.IGSGroupMarker"
+    name="groupserver.GroupAboutInfo"
+    permission="zope2.View"
+    provides=".interfaces.IGroupAboutInfo"
+    class="gs.viewlet.manager.WeightOrderedViewletManager"
+    template="browser/templates/simplemanager.pt"/>
+
+  <browser:viewlet name="gs-group-about-tab-intro"
+    for="gs.group.base.interfaces.IGSGroupMarker"
+    manager=".interfaces.IGroupAboutInfo"
+    template="browser/templates/abouttabintro.pt"
+    class=".abouttab.AboutInfo"
+    permission="zope2.View"
+    weight="30"
+    title="About Intro" />
+  <browser:viewlet name="gs-group-about-tab-admin"
+    for="gs.group.base.interfaces.IGSGroupMarker"
+    manager=".interfaces.IGroupAboutInfo"
+    template="browser/templates/abouttabadmin.pt"
+    class="gs.group.home.admin.AdminTab"
+    permission="zope2.ManageProperties"
+    weight="40"
+    title="About Admin" />
+
 
   <!--The Change About Page-->
   <interface 

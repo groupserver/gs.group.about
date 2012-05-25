@@ -1,0 +1,6 @@
+<div id="gs-group-about-tab">
+  <tal:block replace="structure provider:groupserver.GroupAboutInfo">
+    Information about the group.
+  </tal:block>
+</div><!--gs-group-about-tab-->
+

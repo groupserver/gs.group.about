@@ -1,0 +1,11 @@
+<div id="gs-grou-about-tab-admin"
+  class="ui-state-highlight ui-corner-all">
+  <p style="margin:1.385em;">
+    <span style="float: left; margin-right: 0.0.69em;" 
+      class="ui-icon ui-icon-info"></span>
+    As a site administrator you can
+    <a href="changeabout.html"><strong>change</strong> this About 
+      Tab.</a>
+  </p>
+</div><!--gs-grou-about-tab-admin-->
+

@@ -1,0 +1,4 @@
+<tal:block repeat="viewlet options/viewlets">
+  <tal:block content="structure viewlet/render">Tab Content</tal:block>
+</tal:block>
+
