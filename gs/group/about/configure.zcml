@@ -29,17 +29,8 @@
     template="browser/templates/abouttabintro.pt"
     class=".abouttab.AboutInfo"
     permission="zope2.View"
-    weight="30"
+    weight="100"
     title="About Intro" />
-  <browser:viewlet name="gs-group-about-tab-admin"
-    for="gs.group.base.interfaces.IGSGroupMarker"
-    manager=".interfaces.IGroupAboutInfo"
-    template="browser/templates/abouttabadmin.pt"
-    class="gs.group.home.admin.AdminTab"
-    permission="zope2.ManageProperties"
-    weight="40"
-    title="About Admin" />
-
 
   <!--The Change About Page-->
   <interface 
