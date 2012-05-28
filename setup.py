@@ -32,7 +32,10 @@ setup(name='gs.group.about',
     zip_safe=True,
     install_requires=[
         'setuptools',
+        'gs.content.form',
+        'gs.group.base',
         'gs.group.home',
+        'gs.viewlet',
         # -*- Extra requirements: -*-
     ],
     entry_points="""
