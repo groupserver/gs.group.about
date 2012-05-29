@@ -1,4 +1,4 @@
-<html metal:use-macro="context/@@groupserver_layout/page">
+<html metal:use-macro="context/@@groupserver_site_home_layout/page">
   <head>
     <title metal:fill-slot="title">
       <span tal:replace="string:${view/label}: ${view/groupInfo/name}: ${view/siteInfo/name}">
@@ -13,7 +13,6 @@
     <tal:block metal:fill-slot="body">
       <form enctype="multipart/form-data"  method="post" action="."
         tal:attributes="action request/URL" id="change-about">
-        
         <h1 tal:content="view/label">Change About</h1>
         <tal:block define="widgets view/widgets">
           <tal:block 
@@ -32,7 +31,9 @@
       <script type="text/javascript"
         src="/++resource++popup_help-20071218.js">&#160;</script>
       <script type="text/javascript" 
-        src="/++resource++wymeditor-20090831/jquery.wymeditor.js">&#160;</script>
+        src="/++resource++wymeditor-20090831/jquery.wymeditor.js">
+	&#160;
+      </script>
       <script type="text/javascript"
         src="/++resource++gswym.js">&#160;</script>
       <script type="text/javascript">
