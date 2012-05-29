@@ -15,17 +15,28 @@
     <tal:block content="structure provider:groupserver.FormStatusMessage"
       define="errors view/errors; status view/status; widgets view/widgets"
       metal:fill-slot="messages">&#160;</tal:block>
-    <tal:block metal:fill-slot="body">
+    <div id="gs-group-about-change-about"
+	 metal:fill-slot="body">
+      <h1 tal:content="view/label">Change About</h1>
+      <ul class="inline-list navlinks">
+	<li>
+	  <a tal:attributes="href view/groupInfo/relativeURL;
+			     title view/groupInfo/name;"
+	     class="up" href="#">Group</a>
+	</li>
+      </ul><!--navlinks-->
+      <p id="gs-group-about-change-about-intro" class="intro">
+	To change the about tab for
+	<span tal:content="view/groupInfo/name"
+	   class="group">this group</span>,
+	edit the text below and click the
+	<samp class="button" 
+              tal:define="action python:[a for a in view.actions][0].label"
+              tal:content="action">Big R</samp> 
+	button.
+      </p>
       <form enctype="multipart/form-data"  method="post" action="."
         tal:attributes="action request/URL" id="change-about">
-        <h1 tal:content="view/label">Change About</h1>
-	<ul class="inline-list navlinks">
-	  <li>
-	    <a tal:attributes="href view/groupInfo/relativeURL;
-			       title view/groupInfo/name;"
-	       class="up" href="#">Group</a>
-	  </li>
-	</ul><!--navlinks-->
         <tal:block define="widgets view/widgets">
           <tal:block 
             replace="structure provider:groupserver.FormWidgets"/>
@@ -38,7 +49,7 @@
           </tal:block>
         </div><!--buttons-->
       </form>
-    </tal:block>
+    </div><!--gs-group-about-change-about-->
     <tal:block metal:fill-slot="javascript">
       <script type="text/javascript"
         src="/++resource++popup_help-20071218.js">&#160;</script>
