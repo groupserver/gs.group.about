@@ -1,6 +1,7 @@
 # coding=utf-8
-from zope.formlib import form
+from zope.cachedescriptors.property import Lazy
 from zope.component import createObject
+from zope.formlib import form
 from Products.Five.browser.pagetemplatefile import ZopeTwoPageTemplateFile
 from gs.content.form.wymeditor import wym_editor_widget
 from gs.content.form.utils import enforce_schema
@@ -9,23 +10,24 @@ from gs.group.home.audit import Auditor, CHANGE_ABOUT
 from interfaces import IChangeAbout
 
 class ChangeAbout(GroupForm):
-    label = u'Change the Homepage About Tab'
     pageTemplateFileName = 'browser/templates/changeabout.pt'
     template = ZopeTwoPageTemplateFile(pageTemplateFileName)
 
     def __init__(self, group, request):
         GroupForm.__init__(self, group, request)
-        self.__formFields = None
+    
+    @Lazy
+    def label(self):
+        retval = u'Change the About tab for %s' % self.groupInfo.name
+        assert type(retval) == unicode
+        return retval
         
-    @property
+    @Lazy
     def form_fields(self):
-        if self.__formFields == None:
-            enforce_schema(self.context, IChangeAbout)
-            self.__formFields = form.Fields(IChangeAbout,  
-                                            render_context=True)
-            self.__formFields['aboutText'].custom_widget = \
-                wym_editor_widget
-        return self.__formFields        
+        enforce_schema(self.context, IChangeAbout)
+        retval = form.Fields(IChangeAbout, render_context=True)
+        retval['aboutText'].custom_widget = wym_editor_widget
+        return retval
 
     @form.action(label=u'Change', failure='handle_change_action_failure')
     def handle_invite(self, action, data):
