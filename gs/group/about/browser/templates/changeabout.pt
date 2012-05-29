@@ -5,6 +5,11 @@
         Change About
       </span>
     </title>
+    <tal:block metal:fill-slot="metadata">
+      <link rel="up" title="Group page" href="#"
+	    tal:attributes="href view/groupInfo/relativeURL;
+			    title view/groupInfo/name;"/>
+    </tal:block>
   </head>
   <body>
     <tal:block content="structure provider:groupserver.FormStatusMessage"
@@ -14,6 +19,13 @@
       <form enctype="multipart/form-data"  method="post" action="."
         tal:attributes="action request/URL" id="change-about">
         <h1 tal:content="view/label">Change About</h1>
+	<ul class="inline-list navlinks">
+	  <li>
+	    <a tal:attributes="href view/groupInfo/relativeURL;
+			       title view/groupInfo/name;"
+	       class="up" href="#">Group</a>
+	  </li>
+	</ul><!--navlinks-->
         <tal:block define="widgets view/widgets">
           <tal:block 
             replace="structure provider:groupserver.FormWidgets"/>
