@@ -40,13 +40,20 @@
     name="changeabout.html"
     class=".changeabout.ChangeAbout"
     permission="zope2.ManageProperties"/>
-
+  <!--The link to the Change About page-->
+  <browser:viewlet 
+    for="gs.group.base.interfaces.IGSGroupMarker"
+    name="gs-group-about-change-link"
+    manager="gs.group.properties.interfaces.IGroupAdminPropertiesLinks"
+    template="browser/templates/propertieslinks.pt"
+    class="gs.group.member.base.viewlet.GroupAdminViewlet"
+    permission="zope2.ManageProperties"
+    weight="1"
+    title="Change About Link" />
   <!--Help-->
   <browser:viewlet name="gs-group-home-about-help"
     manager="gs.help.interfaces.IAdminHelp"
     template="browser/templates/abouthelp.pt"
     permission="zope2.Public"
     weight="3" />
-
 </configure>
-
