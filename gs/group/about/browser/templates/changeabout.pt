@@ -7,8 +7,8 @@
     </title>
     <tal:block metal:fill-slot="metadata">
       <link rel="up" title="Group page" href="#"
-	    tal:attributes="href view/groupInfo/relativeURL;
-			    title view/groupInfo/name;"/>
+            tal:attributes="href view/groupInfo/relativeURL;
+                            title view/groupInfo/name;"/>
     </tal:block>
   </head>
   <body>
@@ -16,24 +16,18 @@
       define="errors view/errors; status view/status; widgets view/widgets"
       metal:fill-slot="messages">&#160;</tal:block>
     <div id="gs-group-about-change-about"
-	 metal:fill-slot="body">
+         metal:fill-slot="body">
       <h1 tal:content="view/label">Change About</h1>
-      <ul class="inline-list navlinks">
-	<li>
-	  <a tal:attributes="href view/groupInfo/relativeURL;
-			     title view/groupInfo/name;"
-	     class="up" href="#">Group</a>
-	</li>
-      </ul><!--navlinks-->
       <p id="gs-group-about-change-about-intro" class="intro">
-	To change the about tab for
-	<span tal:content="view/groupInfo/name"
-	   class="group">this group</span>,
-	edit the text below and click the
-	<samp class="button" 
+        To change the about tab for
+        <a tal:attributes="href view/groupInfo/relativeURL;"
+           tal:content="view/groupInfo/name"
+           class="group" href="#">this group</a>,
+        edit the text below and click the
+        <samp class="button" 
               tal:define="action python:[a for a in view.actions][0].label"
               tal:content="action">Big R</samp> 
-	button.
+        button.
       </p>
       <form enctype="multipart/form-data"  method="post" action="."
         tal:attributes="action request/URL" id="change-about">
@@ -55,7 +49,7 @@
         src="/++resource++popup_help-20071218.js">&#160;</script>
       <script type="text/javascript" 
         src="/++resource++wymeditor-20090831/jquery.wymeditor.js">
-	&#160;
+        &#160;
       </script>
       <script type="text/javascript"
         src="/++resource++gswym.js">&#160;</script>
