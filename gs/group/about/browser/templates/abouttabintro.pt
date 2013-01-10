@@ -3,10 +3,11 @@
        tal:content="structure view/aboutText">
     This is the bulk of the text for the about tab.
   </div><!--gs-content-js-more-content-->
-  <p id="gs-group-about-tab-intro-more">
-    <a class="gs-content-js-more-button"
+  <p id="gs-group-about-tab-intro-buttons" 
+     class="gs-content-js-more-buttons">
+    <a class="gs-content-js-more-buttons-more"
        href="#"><strong>More&#8230;</strong></a>
-    <a class="gs-content-js-less-button"
+    <a class="gs-content-js-more-buttons-less"
        href="#"><span class="minor">Less</span></a>
   </p>
 </div><!--gs-group-about-tab-intro-->
