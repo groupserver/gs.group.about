@@ -6,22 +6,22 @@
   xmlns:five="http://namespaces.zope.org/five">
 
   <!-- The About Tab -->
-  <browser:viewlet name="gs-group-about-tab"
+  <browser:viewlet 
+    name="gs-group-about"
     for="gs.group.base.interfaces.IGSGroupMarker"
-    manager="gs.group.home.interfaces.IGroupHomepageInfo"
-    template="browser/templates/abouttab.pt"
+    manager="gs.group.home.interfaces.IGroupHomepageMain"
     class=".abouttab.AboutTab"
+    template="browser/templates/abouttab.pt"
     permission="zope2.View"
-    weight="0"
-    title="About" />
+    weight="20" />
 
   <browser:viewletManager
-    for="gs.group.base.interfaces.IGSGroupMarker"
     name="groupserver.GroupAboutInfo"
-    permission="zope2.View"
+    for="gs.group.base.interfaces.IGSGroupMarker"
     provides=".interfaces.IGroupAboutInfo"
     class="gs.viewlet.manager.WeightOrderedViewletManager"
-    template="browser/templates/simplemanager.pt"/>
+    template="browser/templates/simplemanager.pt"
+    permission="zope2.View"/>
 
   <browser:viewlet name="gs-group-about-tab-intro"
     for="gs.group.base.interfaces.IGSGroupMarker"
@@ -31,10 +31,16 @@
     permission="zope2.View"
     weight="100"
     title="About Intro" />
+  <browser:viewlet 
+    name="gs-group-about-script"
+    for="gs.group.base.interfaces.IGSGroupMarker"
+    manager="gs.group.home.interfaces.IGroupHomepageScripts"
+    class=".abouttab.AboutTab"
+    template="browser/templates/about-js.pt"
+    permission="zope2.View"
+    weight="20" />
 
   <!--The Change About Page-->
-  <interface 
-    interface=".interfaces.IChangeAbout"/>
   <browser:page
     for="gs.group.base.interfaces.IGSGroupMarker"
     name="changeabout.html"

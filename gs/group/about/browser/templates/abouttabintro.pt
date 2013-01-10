@@ -1,5 +1,12 @@
-<div id="gs-group-about-tab-intro" 
-  tal:content="structure view/aboutText">
-  This is the bulk of the text for the about tab.
+<div id="gs-group-about-tab-intro" class="gs-content-js-more">
+  <div class="gs-content-js-more-content gs-content-js-more-content-small"
+       tal:content="structure view/aboutText">
+    This is the bulk of the text for the about tab.
+  </div><!--gs-content-js-more-content-->
+  <p id="gs-group-about-tab-intro-more">
+    <a class="gs-content-js-more-button"
+       href="#"><strong>More&#8230;</strong></a>
+    <a class="gs-content-js-less-button"
+       href="#"><span class="minor">Less</span></a>
+  </p>
 </div><!--gs-group-about-tab-intro-->
-
