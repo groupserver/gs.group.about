@@ -1,10 +1,4 @@
-<div id="gs-group-about-script">
-  <script type="text/javascript" 
-          src="/++resource++gs-content-js-more-20130110.js">&#160;</script>
-  <script type="text/javascript">
-    jQuery.noConflict();
-    jQuery(document).ready( function () {
-        GSMoreWidget('#gs-group-about-tab-intro');
-    });
-  </script>
-</div><!--gs-group-about-script-->
+<script id="gs-group-about-script"
+        type="text/javascript" 
+        src="/++resource++gs-group-about-20130111.js" 
+        defer="true">&#160;</script>

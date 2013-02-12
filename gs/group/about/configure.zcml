@@ -39,6 +39,10 @@
     template="browser/templates/about-js.pt"
     permission="zope2.View"
     weight="20" />
+  <browser:resource
+    name="gs-group-about-20130111.js"
+    file="browser/javascript/about.js"
+    permission="zope2.Public" />
 
   <!--The Change About Page-->
   <browser:page
