@@ -27,7 +27,7 @@
     <tal:block content="structure provider:groupserver.FormStatusMessage"
       define="errors view/errors; status view/status; widgets view/widgets"
       metal:fill-slot="messages">&#160;</tal:block>
-    <div id="gs-group-about-change-about"
+    <div id="gs-group-about-change-about" role="main"
          metal:fill-slot="body">
       <h1 tal:content="view/label">Change About</h1>
       <p id="gs-group-about-change-about-intro" class="intro">
