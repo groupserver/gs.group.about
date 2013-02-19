@@ -1,2 +1,2 @@
-<li id="gs-group-about-change-link"><a href="changeabout.html">Change the 
-  <em>About Tab.</em></a></li>
+<a id="gs-group-about-change-link" class="btn btn-small"
+   href="changeabout.html">Change</a>

@@ -10,17 +10,12 @@ from gs.group.home.audit import Auditor, CHANGE_ABOUT
 from interfaces import IChangeAbout
 
 class ChangeAbout(GroupForm):
+    label = u'Change About'
     pageTemplateFileName = 'browser/templates/changeabout.pt'
     template = ZopeTwoPageTemplateFile(pageTemplateFileName)
 
     def __init__(self, group, request):
         GroupForm.__init__(self, group, request)
-    
-    @Lazy
-    def label(self):
-        retval = u'Change the About tab for %s' % self.groupInfo.name
-        assert type(retval) == unicode
-        return retval
         
     @Lazy
     def form_fields(self):

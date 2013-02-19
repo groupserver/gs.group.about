@@ -1,4 +1,4 @@
-<html metal:use-macro="context/@@groupserver_site_home_layout/page">
+<html metal:use-macro="context/@@groupserver_layout/page">
   <head>
     <title metal:fill-slot="title">
       <span tal:replace="string:${view/label}: ${view/groupInfo/name}: ${view/siteInfo/name}">
@@ -7,11 +7,23 @@
     </title>
     <tal:block metal:fill-slot="metadata">
       <link rel="up" title="Group page" href="#"
-            tal:attributes="href view/groupInfo/relativeURL;
+            tal:attributes="href string:${view/groupInfo/relativeURL}/;
                             title view/groupInfo/name;"/>
     </tal:block>
   </head>
   <body>
+    <ul metal:fill-slot="breadcrumb">
+      <li><a tal:attributes="title string:${view/siteInfo/name} Homepage"
+             href="/" title="Home">&#8962;</a></li>
+      <li>
+        <a class="group" 
+           tal:attributes="href string:${view/groupInfo/relativeURL}/">
+          <strong
+            tal:content="view/groupInfo/name">This group</strong></a>
+      </li>
+      <li>Change About</li>
+    </ul>
+
     <tal:block content="structure provider:groupserver.FormStatusMessage"
       define="errors view/errors; status view/status; widgets view/widgets"
       metal:fill-slot="messages">&#160;</tal:block>
@@ -44,22 +56,9 @@
         </div><!--buttons-->
       </form>
     </div><!--gs-group-about-change-about-->
-    <tal:block metal:fill-slot="javascript">
-      <script type="text/javascript"
-        src="/++resource++popup_help-20071218.js">&#160;</script>
-      <script type="text/javascript" 
-        src="/++resource++wymeditor-20090831/jquery.wymeditor.js">
-        &#160;
-      </script>
-      <script type="text/javascript"
-        src="/++resource++gswym.js">&#160;</script>
-      <script type="text/javascript">
-        jQuery.noConflict()
-        jQuery(document).ready( function () {
-            GSPopupFormHelp.init('#change-about');
-        });
-      </script>
-    </tal:block>
+    <script metal:fill-slot="javascript" type="text/javascript" 
+            src="/++resource++gs-group-about-change.js"
+            defer="true"> </script>
   </body>
 </html>
 

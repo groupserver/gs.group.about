@@ -54,12 +54,17 @@
   <browser:viewlet 
     for="gs.group.base.interfaces.IGSGroupMarker"
     name="gs-group-about-change-link"
-    manager="gs.group.properties.interfaces.IGroupAdminPropertiesLinks"
+    manager=".interfaces.IGroupAboutInfo"
     template="browser/templates/propertieslinks.pt"
     class="gs.group.member.base.viewlet.GroupAdminViewlet"
     permission="zope2.ManageProperties"
     weight="1"
     title="Change About Link" />
+  <browser:resource
+    name="gs-group-about-change.js"
+    file="browser/javascript/change.js"
+    permission="zope2.Public" />
+
   <!--Help-->
   <browser:viewlet name="gs-group-home-about-help"
     manager="gs.help.interfaces.IAdminHelp"
