@@ -1,7 +1,7 @@
 jQuery.noConflict();
 
 function gs_group_about_change_init() {
-    jQuery('#form\\.actions\\.change').addClass('btn').button();
+    //jQuery('#form\\.actions\\.change').addClass('btn').button();
     
 }
 
