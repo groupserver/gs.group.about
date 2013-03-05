@@ -31,7 +31,8 @@ class ChangeAbout(GroupForm):
 
         auditor = Auditor(self.siteInfo, self.groupInfo)
         admin = createObject('groupserver.LoggedInUser', self.context)
-        auditor.info(CHANGE_ABOUT, admin, '%d' % len(data['aboutText']))
+        l = '{0}'.format(len(data['aboutText'])) if data['aboutText'] else '0'
+        auditor.info(CHANGE_ABOUT, admin, l)
 
         s = u'The About tab on the homepage for <a href="{0}/">{1}</a> has '\
             u'been changed.'
