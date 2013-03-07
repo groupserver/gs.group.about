@@ -8,6 +8,6 @@
     <a class="gs-content-js-more-buttons-more muted"
        href="#">More</a>
     <a class="gs-content-js-more-buttons-less muted"
-       href="#"><span class="minor">Less</span></a>
+       href="#">&#215;</a>
   </p>
 </div><!--gs-group-about-tab-intro-->
