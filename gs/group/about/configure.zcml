@@ -45,11 +45,13 @@
     permission="zope2.Public" />
 
   <!--The Change About Page-->
+  <!-- zope2.ManageUsers is a feature; not a bug. -->
+  <!-- See <https://redmine.iopen.net/issues/3709> -->
   <browser:page
     for="gs.group.base.interfaces.IGSGroupMarker"
     name="changeabout.html"
     class=".changeabout.ChangeAbout"
-    permission="zope2.ManageProperties"/>
+    permission="zope2.ManageUsers"/>
   <!--The link to the Change About page-->
   <browser:viewlet 
     for="gs.group.base.interfaces.IGSGroupMarker"
@@ -57,7 +59,7 @@
     manager=".interfaces.IGroupAboutInfo"
     template="browser/templates/propertieslinks.pt"
     class="gs.group.member.base.viewlet.GroupAdminViewlet"
-    permission="zope2.ManageProperties"
+    permission="zope2.ManageUsers"
     weight="1"
     title="Change About Link" />
   <browser:resource
