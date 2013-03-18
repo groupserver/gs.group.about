@@ -28,7 +28,17 @@ The *About Viewlet* is displayed in the main part the Group page [#group]_.
 Because the position of the About tab is so valuable multiple products may
 want to show there. To allow this the About viewlet contains a viewlet
 manager, ``gs.group.about.interfaces.IGroupAboutInfo``, which other
-products can supply viewlets for.
+products can supply viewlets for::
+
+  <browser:viewlet 
+    name="a-thing"
+    for="gs.group.base.interfaces.IGSGroupMarker"
+    manager="gs.group.about.interfaces.IGroupAboutInfo"
+    template="browser/templates/athing.pt"
+    class=".athing.AThing"
+    permission="zope2.View"
+    weight="10"
+    title="A Thing" />
 
 The "normal" text of the About page is a viewlet that uses the
 ``IGroupAboutInfo`` manager. It gets its content from the ``aboutText``
@@ -62,5 +72,7 @@ Resources
 .. _Creative Commons Attribution-Share Alike 3.0 New Zealand License:
    http://creativecommons.org/licenses/by-sa/3.0/nz/
 
-..  [#group] See ``gs.group.home``.
-..  [#more] See ``gs.content.js.more``.
+..  [#group] See ``gs.group.home``
+             <https://source.iopen.net/groupserver/gs.group.home>
+..  [#more] See ``gs.content.js.more`` 
+            <https://source.iopen.net/groupserver/gs.content.js.more>
