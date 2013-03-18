@@ -32,11 +32,19 @@ setup(name='gs.group.about',
     zip_safe=True,
     install_requires=[
         'setuptools',
+        'Zope2',
+        'zope.browserresource',
+        'zope.cachedescriptors',
+        'zope.component',
+        'zope.formlib',
+        'zope.interface.interface',
+        'zope.schema',
+        'zope.viewlet',
         'gs.content.form',
         'gs.group.base',
         'gs.group.home',
+        'gs.help',
         'gs.viewlet',
-        # -*- Extra requirements: -*-
     ],
     entry_points="""
     # -*- Entry points: -*-
