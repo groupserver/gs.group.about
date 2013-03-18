@@ -1,2 +1,4 @@
 <a id="gs-group-about-change-link" class="btn btn-mini"
-   href="changeabout.html">Change</a>
+   href="changeabout.html" 
+   tal:attributes="href string:${view/groupInfo/relativeURL}/changeabout.html"
+   title="Change this About box">Change</a>
