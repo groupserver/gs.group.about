@@ -1,11 +1,12 @@
 # coding=utf-8
-from gs.group.home.admin import AdminTab
+from gs.group.member.base.viewlet import GroupAdminViewlet
 
-class AboutInfo(AdminTab):
+
+class AboutInfo(GroupAdminViewlet):
     @property
     def aboutText(self):
         return getattr(self.context, 'aboutText', '')
 
-class AboutTab(AdminTab):
-    pass
 
+class AboutTab(GroupAdminViewlet):
+    pass
