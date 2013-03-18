@@ -73,4 +73,11 @@
     template="browser/templates/abouthelp.pt"
     permission="zope2.Public"
     weight="3" />
+
+  <!--Auditing-->
+  <utility 
+    factory=".audit.AuditEventFactory"
+    name="gs.group.home"
+    permission="zope.Public" />
+
 </configure>

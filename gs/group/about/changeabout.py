@@ -6,7 +6,7 @@ from Products.Five.browser.pagetemplatefile import ZopeTwoPageTemplateFile
 from gs.content.form.wymeditor import wym_editor_widget
 from gs.content.form.utils import enforce_schema
 from gs.group.base.form import GroupForm
-from gs.group.home.audit import Auditor, CHANGE_ABOUT
+from audit import Auditor, CHANGE_ABOUT
 from interfaces import IChangeAbout
 
 
