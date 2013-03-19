@@ -42,11 +42,12 @@ setup(name='gs.group.about',
         'zope.viewlet',
         'gs.content.form',
         'gs.group.base',
+        'gs.group.member.viewlet',
         'gs.group.home',
         'gs.help',
         'gs.viewlet',
+        'Products.GSAuditTrail',
     ],
     entry_points="""
     # -*- Entry points: -*-
     """,)
-
