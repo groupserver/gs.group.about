@@ -1,5 +1,5 @@
 # coding=utf-8
-from gs.group.member.base.viewlet import GroupAdminViewlet
+from gs.group.member.viewlet import GroupAdminViewlet
 
 
 class AboutInfo(GroupAdminViewlet):
