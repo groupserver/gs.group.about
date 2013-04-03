@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from gs.group.viewlet import GroupViewlet
+from gs.group.base import GroupViewlet
 
 
 class AboutTab(GroupViewlet):
