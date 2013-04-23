@@ -23,7 +23,8 @@
     template="browser/templates/simplemanager.pt"
     permission="zope2.View"/>
 
-  <browser:viewlet name="gs-group-about-tab-intro"
+  <browser:viewlet
+    name="gs-group-about-tab-intro"
     for="gs.group.base.interfaces.IGSGroupMarker"
     manager=".interfaces.IGroupAboutInfo"
     template="browser/templates/abouttabintro.pt"
