@@ -5,7 +5,7 @@
   xmlns:sqlos="http://namespaces.sqlobject.org/sqlos"
   xmlns:five="http://namespaces.zope.org/five">
 
-  <!-- The About Tab -->
+  <!-- The About Box -->
   <browser:viewlet 
     name="gs-group-about"
     for="gs.group.base.interfaces.IGSGroupMarker"
