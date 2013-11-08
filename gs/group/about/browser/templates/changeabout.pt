@@ -16,7 +16,7 @@
       <li><a tal:attributes="title string:${view/siteInfo/name} Homepage"
              href="/" title="Home">&#8962;</a></li>
       <li>
-        <a class="group" 
+        <a class="group"
            tal:attributes="href string:${view/groupInfo/relativeURL}/">
           <strong
             tal:content="view/groupInfo/name">This group</strong></a>
@@ -36,15 +36,15 @@
            tal:content="view/groupInfo/name"
            class="group" href="#">this group</a>,
         edit the text below and click the
-        <samp class="button" 
+        <samp class="button"
               tal:define="action python:[a for a in view.actions][0].label"
-              tal:content="action">Big R</samp> 
+              tal:content="action">Big R</samp>
         button.
       </p>
       <form enctype="multipart/form-data"  method="post" action="."
         tal:attributes="action request/URL" id="change-about">
         <tal:block define="widgets view/widgets">
-          <tal:block 
+          <tal:block
             replace="structure provider:groupserver.FormWidgets"/>
         </tal:block>
         <div class="buttons" tal:condition="view/availableActions">
@@ -56,9 +56,11 @@
         </div><!--buttons-->
       </form>
     </div><!--gs-group-about-change-about-->
-    <script metal:fill-slot="javascript" type="text/javascript" 
-            src="/++resource++gs-group-about-change.js"
+    <script metal:fill-slot="javascript" class="gs-content-js-wymeditor"
+            type="text/javascript"
+            data-text-element="#form\.aboutText"
+            data-submit="#form\.actions\.change"
+            src="/++resource++wymeditor-1.0.0b5/gswymeditor.js"
             defer="true"> </script>
   </body>
 </html>
-
