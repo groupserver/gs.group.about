@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <configure xmlns="http://namespaces.zope.org/zope"
-  xmlns:browser="http://namespaces.zope.org/browser"
-  xmlns:rdb="http://namespaces.zope.org/rdb"
-  xmlns:sqlos="http://namespaces.sqlobject.org/sqlos"
-  xmlns:five="http://namespaces.zope.org/five">
+           xmlns:browser="http://namespaces.zope.org/browser"
+           i18n_domain="groupserver">
+
+  <include package="zope.viewlet" file="meta.zcml" />
 
   <!-- The About Box -->
-  <browser:viewlet 
+  <browser:viewlet
     name="gs-group-about"
     for="gs.group.base.interfaces.IGSGroupMarker"
     manager="gs.group.home.interfaces.IGroupHomepageMain"
@@ -32,7 +32,7 @@
     permission="zope2.View"
     weight="100"
     title="About Intro" />
-  <browser:viewlet 
+  <browser:viewlet
     name="gs-group-about-script"
     for="gs.group.base.interfaces.IGSGroupMarker"
     manager="gs.group.home.interfaces.IGroupHomepageScripts"
@@ -54,7 +54,7 @@
     class=".changeabout.ChangeAbout"
     permission="zope2.ManageUsers"/>
   <!--The link to the Change About page-->
-  <browser:viewlet 
+  <browser:viewlet
     for="gs.group.base.interfaces.IGSGroupMarker"
     name="gs-group-about-change-link"
     manager=".interfaces.IGroupAboutInfo"
@@ -76,9 +76,8 @@
     weight="3" />
 
   <!--Auditing-->
-  <utility 
+  <utility
     factory=".audit.AuditEventFactory"
     name="gs.group.home"
     permission="zope.Public" />
-
 </configure>
