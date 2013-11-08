@@ -1,4 +1,18 @@
 # -*- coding: utf-8 -*-
+##############################################################################
+#
+# Copyright © 2013 OnlineGroups.net and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+##############################################################################
+from __future__ import absolute_import
 from zope.cachedescriptors.property import Lazy
 from zope.component import createObject
 from zope.formlib import form
@@ -6,8 +20,8 @@ from Products.Five.browser.pagetemplatefile import ZopeTwoPageTemplateFile
 from gs.content.form.wymeditor import wym_editor_widget
 from gs.content.form.utils import enforce_schema
 from gs.group.base.form import GroupForm
-from audit import Auditor, CHANGE_ABOUT
-from interfaces import IChangeAbout
+from .audit import Auditor, CHANGE_ABOUT
+from .interfaces import IChangeAbout
 
 
 class ChangeAbout(GroupForm):
