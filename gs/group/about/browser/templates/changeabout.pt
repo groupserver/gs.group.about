@@ -1,9 +1,11 @@
-<html metal:use-macro="context/@@groupserver_layout/page">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      metal:use-macro="context/@@groupserver_layout/page">
   <head>
-    <title metal:fill-slot="title">
-      <span tal:replace="string:${view/label}: ${view/groupInfo/name}: ${view/siteInfo/name}">
-        Change About
-      </span>
+    <title metal:fill-slot="title"><tal:block replace="view/label" />:
+      <tal:block replace="view/groupInfo/name" />:
+      <tal:block replace="view/siteInfo/name" />
     </title>
     <tal:block metal:fill-slot="metadata">
       <link rel="up" title="Group page" href="#"
@@ -13,8 +15,12 @@
   </head>
   <body>
     <ul metal:fill-slot="breadcrumb">
-      <li><a tal:attributes="title string:${view/siteInfo/name} Homepage"
-             href="/" title="Home">&#8962;</a></li>
+      <li>
+        <a href="/" class="icon-alone">
+          <span aria-hidden="true" data-icon="&#x2302;"></span>
+          <span class="screen-reader-text">Site home page</span>
+        </a>
+      </li>
       <li>
         <a class="group"
            tal:attributes="href string:${view/groupInfo/relativeURL}/">
