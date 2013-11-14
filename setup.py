@@ -57,7 +57,7 @@ setup(name='gs.group.about',
         'zope.viewlet',
         'Zope2',
         'gs.content.form',
-        'gs.content.js.wymeditor[zope]'
+        'gs.content.js.wymeditor[zope]',
         'gs.content.layout',
         'gs.group.base',
         'gs.group.member.viewlet',
