@@ -67,6 +67,6 @@
             data-text-element="#form\.aboutText"
             data-submit="#form\.actions\.change"
             src="/++resource++wymeditor-1.0.0b5/gswymeditor.js"
-            defer="true"> </script>
+            defer="defer"> </script>
   </body>
 </html>
