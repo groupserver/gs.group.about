@@ -78,10 +78,6 @@
     permission="zope2.ManageUsers"
     weight="1"
     title="Change About Link" />
-  <browser:resource
-    name="gs-group-about-change-20140313.js"
-    file="browser/javascript/change.js"
-    permission="zope2.Public" />
 
   <!--Help-->
   <browser:viewlet name="gs-group-home-about-help"
