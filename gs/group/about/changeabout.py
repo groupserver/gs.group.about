@@ -17,8 +17,8 @@ from zope.cachedescriptors.property import Lazy
 from zope.component import createObject
 from zope.formlib import form
 from Products.Five.browser.pagetemplatefile import ZopeTwoPageTemplateFile
-from gs.content.form.wymeditor import wym_editor_widget
-from gs.content.form.utils import enforce_schema
+from gs.content.form.base.wymeditor import wym_editor_widget
+from gs.content.form.base.utils import enforce_schema
 from gs.group.base.form import GroupForm
 from .audit import Auditor, CHANGE_ABOUT
 from .interfaces import IChangeAbout
