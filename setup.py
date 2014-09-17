@@ -19,9 +19,9 @@ from version import get_version
 
 version = get_version()
 
-with codecs.open('README.txt', encoding='utf-8') as f:
+with codecs.open('README.rst', encoding='utf-8') as f:
     long_description = f.read()
-with codecs.open(os.path.join("docs", "HISTORY.txt"), encoding='utf-8') as f:
+with codecs.open(os.path.join("docs", "HISTORY.rst"), encoding='utf-8') as f:
     long_description += '\n' + f.read()
 
 setup(name='gs.group.about',
