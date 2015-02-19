@@ -11,6 +11,7 @@
 # WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
 # FOR A PARTICULAR PURPOSE.
 #
+############################################################################
 from gs.group.base import GroupViewlet
 
 
