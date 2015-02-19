@@ -2,7 +2,7 @@
 ``gs.group.about``
 ==================
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The About box for a GroupServer Group
+The About box for a GroupServer group
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :Author: `Michael JasonSmith`_
@@ -30,7 +30,7 @@ want to show there. To allow this the About viewlet contains a viewlet
 manager, ``gs.group.about.interfaces.IGroupAboutInfo``, which other
 products can supply viewlets for::
 
-  <browser:viewlet 
+  <browser:viewlet
     name="a-thing"
     for="gs.group.base.interfaces.IGSGroupMarker"
     manager="gs.group.about.interfaces.IGroupAboutInfo"
@@ -61,7 +61,8 @@ changed by the group administrator.
 Resources
 =========
 
-- Code repository: https://source.iopen.net/groupserver/gs.group.about
+- Code repository: https://github.com/groupserver/gs.group.about
+- Translations: https://www.transifex.com/projects/p/gs-group-about/
 - Questions and comments to http://groupserver.org/groups/development
 - Report bugs at https://redmine.iopen.net/projects/groupserver
 
@@ -73,6 +74,6 @@ Resources
    http://creativecommons.org/licenses/by-sa/3.0/nz/
 
 ..  [#group] See ``gs.group.home``
-             <https://source.iopen.net/groupserver/gs.group.home>
-..  [#more] See ``gs.content.js.more`` 
-            <https://source.iopen.net/groupserver/gs.content.js.more>
+             <https://github.com/groupserver/gs.group.home>
+..  [#more] See ``gs.content.js.more``
+            <https://github.com/groupserver/gs.content.js.more>
