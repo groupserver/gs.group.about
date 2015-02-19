@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-##############################################################################
+############################################################################
 #
 # Copyright © 2013, 2014 OnlineGroups.net and Contributors.
 # All Rights Reserved.
@@ -11,7 +11,7 @@
 # WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
 # FOR A PARTICULAR PURPOSE.
 #
-##############################################################################
+############################################################################
 import codecs
 import os
 from setuptools import setup, find_packages
@@ -21,10 +21,12 @@ version = get_version()
 
 with codecs.open('README.rst', encoding='utf-8') as f:
     long_description = f.read()
-with codecs.open(os.path.join("docs", "HISTORY.rst"), encoding='utf-8') as f:
+with codecs.open(os.path.join("docs", "HISTORY.rst"),
+                 encoding='utf-8') as f:
     long_description += '\n' + f.read()
 
-setup(name='gs.group.about',
+setup(
+    name='gs.group.about',
     version=version,
     description="The About box for a GroupServer Group",
     long_description=long_description,
@@ -38,11 +40,11 @@ setup(name='gs.group.about',
         "Operating System :: POSIX :: Linux",
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
-      ],
+    ],
     keywords='group, group page, about box',
     author='Michael JasonSmith',
     author_email='mpj17@onlinegroups.net',
-    url='https://source.iopen.net/groupserver/gs.group.about/',
+    url='https://github.com/groupserver/gs.group.about/',
     license='ZPL 2.1',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['gs', 'gs.group'],
@@ -55,6 +57,8 @@ setup(name='gs.group.about',
         'zope.cachedescriptors',
         'zope.component',
         'zope.formlib',
+        'zope.i18n',
+        'zope.i18nmessageid',
         'zope.interface',
         'zope.schema',
         'zope.tal',
