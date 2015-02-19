@@ -40,7 +40,7 @@ class ChangeAbout(GroupForm):
         retval['aboutText'].custom_widget = wym_editor_widget
         return retval
 
-    @form.action(label=_('change-action', 'Change'),
+    @form.action(name="change", label=_('change-action', 'Change'),
                  failure='handle_change_action_failure')
     def handle_invite(self, action, data):
         form.applyChanges(self.context, self.form_fields, data)
