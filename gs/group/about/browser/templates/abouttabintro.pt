@@ -1,13 +1,16 @@
-<div id="gs-group-about-tab-intro">
-  <div id="gs-group-about-tab-intro-text" 
+<div xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     xmlns:tal="http://xml.zope.org/namespaces/tal"
+     i18n:domain="gs.group.about"
+     id="gs-group-about-tab-intro">
+  <div id="gs-group-about-tab-intro-text"
        class="gs-content-js-more-content gs-content-js-more-content-small"
        tal:content="structure view/aboutText">
     This is the bulk of the text for the about tab.
   </div><!--gs-group-about-tab-intro-text-->
   <p class="gs-content-js-more-buttons">
     <a class="gs-content-js-more-buttons-more muted"
-       href="#">More</a>
+       i18n:translate="about-box-more-button" href="#">More</a>
     <a class="gs-content-js-more-buttons-less muted"
-       href="#">&#215;</a>
+       i18n:translate="about-box-less-button" href="#">&#215;</a>
   </p>
 </div><!--gs-group-about-tab-intro-->

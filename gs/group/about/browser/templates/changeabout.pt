@@ -1,4 +1,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="gs.group.about"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       metal:use-macro="context/@@groupserver_layout/page">
@@ -18,7 +20,8 @@
       <li>
         <a href="/" class="icon-alone">
           <span aria-hidden="true" data-icon="&#x2302;"></span>
-          <span class="screen-reader-text">Site home page</span>
+          <span class="screen-reader-text"
+                i18n:translate="site-home-link">Site home page</span>
         </a>
       </li>
       <li>
@@ -27,7 +30,7 @@
           <strong
             tal:content="view/groupInfo/name">This group</strong></a>
       </li>
-      <li>Change About</li>
+      <li i18n:translate="change-about">Change about</li>
     </ul>
 
     <tal:block content="structure provider:groupserver.FormStatusMessage"
@@ -35,15 +38,17 @@
       metal:fill-slot="messages">&#160;</tal:block>
     <div id="gs-group-about-change-about" role="main"
          metal:fill-slot="body">
-      <h1 tal:content="view/label">Change About</h1>
-      <p id="gs-group-about-change-about-intro" class="intro">
+      <h1 tal:content="view/label">Change about</h1>
+      <p id="gs-group-about-change-about-intro" class="intro"
+         i18n:translate="change-about-intro">
         To change the about tab for
         <a tal:attributes="href view/groupInfo/relativeURL;"
            tal:content="view/groupInfo/name"
-           class="group" href="#">this group</a>,
+           class="group" href="#" i18n:name="groupName">this group</a>,
         edit the text below and click the
         <samp class="button"
               tal:define="action python:[a for a in view.actions][0].label"
+              i18n:name="changeButton"
               tal:content="action">Big R</samp>
         button.
       </p>

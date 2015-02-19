@@ -1,8 +1,11 @@
-<div id="gs-group-about" role="region"
+<div xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     xmlns:tal="http://xml.zope.org/namespaces/tal"
+     i18n:domain="gs.group.about"
+     id="gs-group-about" role="region"
      aria-labelledby="gs-group-about-h">
-  <h2 id="gs-group-about-h">About this group</h2>
+  <h2 id="gs-group-about-h"
+      i18n:translate="about-box-label">About this group</h2>
   <tal:block replace="structure provider:groupserver.GroupAboutInfo">
     Information about the group.
   </tal:block>
 </div><!--gs-group-about-tab-->
-

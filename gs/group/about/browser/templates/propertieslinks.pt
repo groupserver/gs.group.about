@@ -1,4 +1,9 @@
-<a id="gs-group-about-change-link" class="btn btn-mini"
-   href="changeabout.html" 
+<a xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+   xmlns:tal="http://xml.zope.org/namespaces/tal"
+   i18n:domain="gs.group.about"
+   id="gs-group-about-change-link" class="btn btn-mini"
+   href="changeabout.html"
    tal:attributes="href string:${view/groupInfo/relativeURL}/changeabout.html"
-   title="Change this About box">Change</a>
+   title="Change this About box"
+   i18n:translate="admin-change-button"
+   i18n:attributes="title admin-change-button-title">Change</a>
