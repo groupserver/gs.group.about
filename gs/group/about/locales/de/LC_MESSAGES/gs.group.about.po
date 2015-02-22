@@ -1,11 +1,12 @@
 # 
 # Translators:
+# Alice Rose <heldinz@posteo.de>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.group.about\n"
 "POT-Creation-Date: 2015-02-19 01:40+0000\n"
-"PO-Revision-Date: 2015-02-19 21:46+0000\n"
-"Last-Translator: Michael JasonSmith <mpj17@onlinegroups.net>\n"
+"PO-Revision-Date: 2015-02-22 21:12+0000\n"
+"Last-Translator: Alice Rose <heldinz@posteo.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/gs-group-about/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,33 +21,33 @@ msgstr ""
 #. Default: "About this group"
 #: ./browser/templates/abouttab.pt:6
 msgid "about-box-label"
-msgstr ""
+msgstr "Über diese Gruppe"
 
 #. Default: "&#215;"
 #: ./browser/templates/abouttabintro.pt:13
 msgid "about-box-less-button"
-msgstr ""
+msgstr "&#215;"
 
 #. Default: "More"
 #: ./browser/templates/abouttabintro.pt:11
 msgid "about-box-more-button"
-msgstr ""
+msgstr "Mehr"
 
 #. Default: "Change"
 #: ./browser/templates/propertieslinks.pt:1
 msgid "admin-change-button"
-msgstr ""
+msgstr "Ändern"
 
 #. Default: "Change this About box"
 # Change this About box
 #: ./browser/templates/propertieslinks.pt:1
 msgid "admin-change-button-title"
-msgstr ""
+msgstr "Diesen Text ändern"
 
 #. Default: "Change about"
 #: ./browser/templates/changeabout.pt:33
 msgid "change-about"
-msgstr ""
+msgstr "Den Text über diese Gruppe ändern"
 
 #. Default: "To change the about tab for ${groupName}, edit the text below and
 #. click the ${changeButton} button."
@@ -57,12 +58,12 @@ msgstr ""
 #. Default: "Change"
 #: ./changeabout.py:43
 msgid "change-action"
-msgstr ""
+msgstr "Ändern"
 
 #. Default: "Change about"
 #: ./changeabout.py:29
 msgid "change-form-label"
-msgstr ""
+msgstr "Den Text über diese Gruppe ändern"
 
 #. Default: "The About tab on the homepage for <a
 #. href=\"${groupUrl}\">${groupName}</a> has been changed."
@@ -73,12 +74,12 @@ msgstr ""
 #. Default: "Site home page"
 #: ./browser/templates/changeabout.pt:23
 msgid "site-home-link"
-msgstr ""
+msgstr "Startseite"
 
 #. Default: "<p>There is an error:</p>"
 #: ./changeabout.py:63
 msgid "status-problem"
-msgstr ""
+msgstr "<p>Es ist ein Fehler aufgetreten:</p>"
 
 #. Default: "<p>There are errors:</p>"
 #: ./changeabout.py:65
@@ -93,4 +94,4 @@ msgstr ""
 #. Default: "Text"
 #: ./interfaces.py:24
 msgid "text-entry-label"
-msgstr ""
+msgstr "Der Text"

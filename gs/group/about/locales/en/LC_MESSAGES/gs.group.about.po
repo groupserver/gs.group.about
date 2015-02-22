@@ -78,7 +78,7 @@ msgstr "<p>There is an error:</p>"
 #. Default: "<p>There are errors:</p>"
 #: ./changeabout.py:65
 msgid "status-problems"
-msgstr "<p>Thre are errors:</p>"
+msgstr "<p>There are errors:</p>"
 
 #. Default: "The text that appears in the About tab."
 #: ./interfaces.py:25

@@ -3,6 +3,7 @@ host = https://www.transifex.com
 
 [gs-group-about.gs-group-about-pot]
 file_filter = gs/group/about/locales/<lang>/LC_MESSAGES/gs.group.about.po
+source_file = gs/group/about/locales/en/LC_MESSAGES/gs.group.about.po
 source_lang = en
 type = PO
 
