@@ -1,101 +1,91 @@
-#
-# Translators:
-# Alice Rose <heldinz@posteo.de>, 2015
-# Michael JasonSmith <mpj17@onlinegroups.net>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: gs.group.about\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-02-22 22:20+0000\n"
-"PO-Revision-Date: 2015-02-22 21:15+0000\n"
-"Last-Translator: Alice Rose <heldinz@posteo.de>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/gs-group-about/language/fr/)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
-"Language: fr\n"
 
 #. Default: "About this group"
 #: ./browser/templates/abouttab.pt:6
 msgid "about-box-label"
-msgstr "À propos ce groupe "
+msgstr ""
 
 #. Default: "&#215;"
 #: ./browser/templates/abouttabintro.pt:13
 msgid "about-box-less-button"
-msgstr "&#215;"
+msgstr ""
 
 #. Default: "More"
 #: ./browser/templates/abouttabintro.pt:11
 msgid "about-box-more-button"
-msgstr "Plus"
+msgstr ""
 
 #. Default: "Change"
 #: ./browser/templates/propertieslinks.pt:1
 msgid "admin-change-button"
-msgstr "Changez"
+msgstr ""
 
-# Change this About box
 #. Default: "Change this About box"
 #: ./browser/templates/propertieslinks.pt:1
 msgid "admin-change-button-title"
-msgstr "Changez ce texte"
+msgstr ""
 
 #. Default: "Change about"
 #: ./browser/templates/changeabout.pt:33
 msgid "change-about"
-msgstr "Change le texte à  propos le groupe"
+msgstr ""
 
-#. click the ${changeButton} button."
 #. Default: "To change the about tab for ${groupName}, edit the text below and click the ${changeButton} button."
 #: ./browser/templates/changeabout.pt:49
-#, fuzzy
 msgid "change-about-intro"
-msgstr "Changer texte à  propos ${groupName} écrirez le nouveau texte en dessous, et pressez le bouton  ${changeButton}."
+msgstr ""
 
 #. Default: "Change"
 #: ./changeabout.py:43
 msgid "change-action"
-msgstr "Changez"
+msgstr ""
 
 #. Default: "Change about"
 #: ./changeabout.py:29
 msgid "change-form-label"
-msgstr "Change le texte à  propos le groupe"
+msgstr ""
 
-#. href=\"${groupUrl}\">${groupName}</a> has been changed."
 #. Default: "The About tab on the homepage for <a href=\"${groupUrl}\">${groupName}</a> has been changed."
 #: ./changeabout.py:54
-#, fuzzy
 msgid "change-status-success"
-msgstr "Le texte  à propos en le page de <a href=\"${groupUrl}\">${groupName}</a> a changé."
+msgstr ""
 
 #. Default: "Site home page"
 #: ./browser/templates/changeabout.pt:23
 msgid "site-home-link"
-msgstr "L'accueil du site"
+msgstr ""
 
 #. Default: "<p>There is an error:</p>"
 #: ./changeabout.py:63
 msgid "status-problem"
-msgstr "<p>Il y a une erreur :</p>"
+msgstr ""
 
 #. Default: "<p>There are errors:</p>"
 #: ./changeabout.py:65
 msgid "status-problems"
-msgstr "<p>Il y a des erreurs :</p>"
+msgstr ""
 
 #. Default: "The text that appears in the About tab."
 #: ./interfaces.py:25
 msgid "text-entry-description"
-msgstr "Le texte en le À propos région."
+msgstr ""
 
 #. Default: "Text"
 #: ./interfaces.py:24
 msgid "text-entry-label"
-msgstr "Texte"
+msgstr ""
 
