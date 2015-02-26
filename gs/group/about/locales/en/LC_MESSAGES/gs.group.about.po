@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-02-19 01:40+0000\n"
+"POT-Creation-Date: 2015-02-22 22:20+0000\n"
 "PO-Revision-Date: 2015-02-19 13:42-0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,7 +78,7 @@ msgstr "<p>There is an error:</p>"
 #. Default: "<p>There are errors:</p>"
 #: ./changeabout.py:65
 msgid "status-problems"
-msgstr "<p>Thre are errors:</p>"
+msgstr "<p>There are errors:</p>"
 
 #. Default: "The text that appears in the About tab."
 #: ./interfaces.py:25
