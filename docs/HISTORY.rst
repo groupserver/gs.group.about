@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.4.0 (2015-02-18)
+2.4.0 (2015-02-26)
 ------------------
 
 * Added internationalisation_
