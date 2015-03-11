@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-02-22 22:20+0000\n"
-"PO-Revision-Date: 2015-02-19 13:42-0800\n"
+"PO-Revision-Date: 2015-03-11 12:40-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -48,7 +48,7 @@ msgstr "Change about"
 #. Default: "To change the about tab for ${groupName}, edit the text below and click the ${changeButton} button."
 #: ./browser/templates/changeabout.pt:49
 msgid "change-about-intro"
-msgstr "To change the about tab for ${groupName}, edit the text below and click the ${changeButton} button."
+msgstr "To change the about box for ${groupName}, edit the text below and click the ${changeButton} button."
 
 #. Default: "Change"
 #: ./changeabout.py:43
@@ -63,7 +63,7 @@ msgstr "Change About"
 #. Default: "The About tab on the homepage for <a href=\"${groupUrl}\">${groupName}</a> has been changed."
 #: ./changeabout.py:54
 msgid "change-status-success"
-msgstr "The About tab on the homepage for <a href=\"${groupUrl}\">${groupName}</a> has been changed."
+msgstr "The About box on the homepage for <a href=\"${groupUrl}\">${groupName}</a> has been changed."
 
 #. Default: "Site home page"
 #: ./browser/templates/changeabout.pt:23
@@ -83,7 +83,7 @@ msgstr "<p>There are errors:</p>"
 #. Default: "The text that appears in the About tab."
 #: ./interfaces.py:25
 msgid "text-entry-description"
-msgstr "The text that appears in the About tab."
+msgstr "The text that appears in the About box."
 
 #. Default: "Text"
 #: ./interfaces.py:24
