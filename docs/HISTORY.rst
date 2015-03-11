@@ -1,6 +1,15 @@
 Changelog
 =========
 
+2.4.1 (2015-03-11)
+------------------
+
+* [FR] Adding a French translation, thanks to `Razique Mahroua`_
+* [EN] Renaming all mentions of the about *tab* with *box*
+  (thanks to Razique for pointing that out)
+
+.. _Razique Mahroua: https://www.transifex.com/accounts/profile/Razique/
+
 2.4.0 (2015-02-26)
 ------------------
 
@@ -64,4 +73,4 @@ Changelog
 Initial version. Prior to this the *About* information was
 rendered by a template in the ZMI.
 
-..  LocalWords:  Changelog ZMI
+..  LocalWords:  Changelog ZMI Razique Mahroua
