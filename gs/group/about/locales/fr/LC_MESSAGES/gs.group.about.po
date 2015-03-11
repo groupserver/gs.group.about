@@ -2,12 +2,13 @@
 # Translators:
 # Alice Rose <heldinz@posteo.de>, 2015
 # Michael JasonSmith <mpj17@onlinegroups.net>, 2015
+# Razique Mahroua <razique.mahroua@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.group.about\n"
 "POT-Creation-Date: 2015-02-19 01:40+0000\n"
-"PO-Revision-Date: 2015-02-22 21:15+0000\n"
-"Last-Translator: Alice Rose <heldinz@posteo.de>\n"
+"PO-Revision-Date: 2015-03-11 19:37+0000\n"
+"Last-Translator: Michael JasonSmith <mpj17@onlinegroups.net>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/gs-group-about/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,45 +38,45 @@ msgstr "Plus"
 #. Default: "Change"
 #: ./browser/templates/propertieslinks.pt:1
 msgid "admin-change-button"
-msgstr "Changez"
+msgstr "Changer"
 
 #. Default: "Change this About box"
 # Change this About box
 #: ./browser/templates/propertieslinks.pt:1
 msgid "admin-change-button-title"
-msgstr "Changez ce texte"
+msgstr "Changer ce champ \"A propos\""
 
 #. Default: "Change about"
 #: ./browser/templates/changeabout.pt:33
 msgid "change-about"
-msgstr "Change le texte à  propos le groupe"
+msgstr "Mettre à jour le texte \"A propos\""
 
 #. Default: "To change the about tab for ${groupName}, edit the text below and
 #. click the ${changeButton} button."
 #: ./browser/templates/changeabout.pt:49
 msgid "change-about-intro"
-msgstr "Changer texte à  propos ${groupName} écrirez le nouveau texte en dessous, et pressez le bouton  ${changeButton}."
+msgstr "Afin de pouvoir metre à jour la section \"A propos\" pour le groupe ${groupName}, saisissez le texte ci-dessous, et cliquez sur le bouton  ${changeButton}."
 
 #. Default: "Change"
 #: ./changeabout.py:43
 msgid "change-action"
-msgstr "Changez"
+msgstr "Changer"
 
 #. Default: "Change about"
 #: ./changeabout.py:29
 msgid "change-form-label"
-msgstr "Change le texte à  propos le groupe"
+msgstr "Mettre à jour  le texte \"A propos\""
 
 #. Default: "The About tab on the homepage for <a
 #. href=\"${groupUrl}\">${groupName}</a> has been changed."
 #: ./changeabout.py:54
 msgid "change-status-success"
-msgstr "Le texte  à propos en le page de <a href=\"${groupUrl}\">${groupName}</a> a changé."
+msgstr "Le champ \"A propos\" sur la page d'accueil pour le groupe <a href=\"${groupUrl}\">${groupName}</a> a été mise à jour."
 
 #. Default: "Site home page"
 #: ./browser/templates/changeabout.pt:23
 msgid "site-home-link"
-msgstr "L'accueil du site"
+msgstr "La page d'accueil du site"
 
 #. Default: "<p>There is an error:</p>"
 #: ./changeabout.py:63
@@ -90,7 +91,7 @@ msgstr "<p>Il y a des erreurs :</p>"
 #. Default: "The text that appears in the About tab."
 #: ./interfaces.py:25
 msgid "text-entry-description"
-msgstr "Le texte en le À propos région."
+msgstr "Le texte qui apparaît dans l'onglet \"A propos\""
 
 #. Default: "Text"
 #: ./interfaces.py:24
