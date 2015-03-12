@@ -60,7 +60,7 @@ setup(
         'zope.cachedescriptors',
         'zope.component',
         'zope.formlib',
-        'zope.i18n',
+        'zope.i18n[compile]',
         'zope.i18nmessageid',
         'zope.interface',
         'zope.schema',
