@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.4.2 (2016-10-19)
+------------------
+
+* Following the updated WYMeditor code
+
 2.4.1 (2015-03-11)
 ------------------
 
@@ -73,4 +78,4 @@ Changelog
 Initial version. Prior to this the *About* information was
 rendered by a template in the ZMI.
 
-..  LocalWords:  Changelog ZMI Razique Mahroua
+..  LocalWords:  Changelog ZMI Razique Mahroua WYMeditor
