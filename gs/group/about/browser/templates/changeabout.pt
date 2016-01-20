@@ -71,7 +71,7 @@
             type="text/javascript"
             data-text-element="#form\.aboutText"
             data-submit="#form\.actions\.change"
-            src="/++resource++wymeditor-1.1.1/gswymeditor.js"
+            src="/++resource++wymeditor-1.1.1/gswymeditor-min.js"
             defer="defer"> </script>
   </body>
 </html>
