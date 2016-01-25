@@ -1,10 +1,11 @@
 Changelog
 =========
 
-2.4.2 (2016-10-19)
+2.4.2 (2016-01-25)
 ------------------
 
 * Following the updated WYMeditor code
+* Following the updated *More* button code
 
 2.4.1 (2015-03-11)
 ------------------
