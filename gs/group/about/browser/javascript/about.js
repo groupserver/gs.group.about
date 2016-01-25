@@ -18,6 +18,6 @@ function gs_group_about_init() {
 }
 
 jQuery(window).load(function() {
-    gsJsLoader.with_module('/++resource++gs-content-js-more-min-20140313.js',
+    gsJsLoader.with_module('/++resource++gs-content-js-more-min-20160125.js',
                            gs_group_about_init);
 });
