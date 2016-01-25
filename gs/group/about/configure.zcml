@@ -54,11 +54,11 @@
     permission="zope2.View"
     weight="20" />
   <browser:resource
-    name="gs-group-about-20140313.js"
+    name="gs-group-about-20160125.js"
     file="browser/javascript/about.js"
     permission="zope2.Public" />
   <browser:resource
-    name="gs-group-about-min-20140313.js"
+    name="gs-group-about-min-20160125.js"
     file="browser/javascript/about-min.js"
     permission="zope2.Public" />
 
