@@ -1,13 +1,15 @@
 # 
 # Translators:
 # Alice Rose <heldinz@posteo.de>, 2015
+# Stephan G. Blendinger <stephanblendinger@me.com>, 2016
+# Süleyman <sb1106@gmx.net>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.group.about\n"
 "POT-Creation-Date: 2015-02-19 01:40+0000\n"
-"PO-Revision-Date: 2015-02-22 21:12+0000\n"
-"Last-Translator: Alice Rose <heldinz@posteo.de>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/gs-group-about/language/de/)\n"
+"PO-Revision-Date: 2016-06-05 12:09+0000\n"
+"Last-Translator: Stephan G. Blendinger <stephanblendinger@me.com>\n"
+"Language-Team: German (http://www.transifex.com/groupserver/gs-group-about/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -53,7 +55,7 @@ msgstr "Den Text über diese Gruppe ändern"
 #. click the ${changeButton} button."
 #: ./browser/templates/changeabout.pt:49
 msgid "change-about-intro"
-msgstr ""
+msgstr "Um die Beschreibung für die Gruppe $ {groupname} zu ändern, bearbeiten Sie den Text und klicken Sie anschließend auf den $ {changeButton} Button."
 
 #. Default: "Change"
 #: ./changeabout.py:43
@@ -69,7 +71,7 @@ msgstr "Den Text über diese Gruppe ändern"
 #. href=\"${groupUrl}\">${groupName}</a> has been changed."
 #: ./changeabout.py:54
 msgid "change-status-success"
-msgstr ""
+msgstr "Der Beschreibungstext, der für <a href=\"${groupUrl}\"> $ {groupName} </a> auf der Webseite erscheint."
 
 #. Default: "Site home page"
 #: ./browser/templates/changeabout.pt:23
@@ -84,12 +86,12 @@ msgstr "<p>Es ist ein Fehler aufgetreten:</p>"
 #. Default: "<p>There are errors:</p>"
 #: ./changeabout.py:65
 msgid "status-problems"
-msgstr ""
+msgstr "<p> Es sind Fehler aufgetreten: </ p>"
 
 #. Default: "The text that appears in the About tab."
 #: ./interfaces.py:25
 msgid "text-entry-description"
-msgstr ""
+msgstr "Der Text, der auf der Registerkarte Über erscheint."
 
 #. Default: "Text"
 #: ./interfaces.py:24
